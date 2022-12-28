@@ -63,25 +63,43 @@ body {
   .list-decimal-special li {
     counter-increment: li;
     position: relative;
+    padding-left: 2em;
   }
 
   .list-decimal-special li:before {
     content: counter(li) '.';
     @apply text-gold;
-    left: -2em;
     position: absolute;
     font-weight: 600;
     font-size: 14px;
     top: 2px;
+    left: 0;
   }
 }
 
 @layer components {
+  .progress {
+    position: relative;
+    z-index: 2;
+  }
+
+  .progress::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 2px;
+    @apply bg-main-blue;
+    z-index: 1;
+    top: 50px
+  }
+
   .progress > div {
     position: relative;
     height: 48px;
     width: 48px;
     margin-bottom: 80px;
+    z-index: 2;
   }
 
   .progress .step-n {
