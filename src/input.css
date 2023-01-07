@@ -24,6 +24,11 @@ body {
   object-fit: cover;
   top: 0;
   transform: translateZ(-10px) scale(2);
+  width: 100%;
+}
+
+.background img {
+  width: 100% !important;
 }
 
 @layer base {
@@ -44,8 +49,9 @@ body {
     @apply mb-2 text-lg leading-6;
   }
 
-  .container {
-    max-width: 1150px;
+  .fixed-container {
+    width: 1170px;
+    margin: 0 auto;
   }
 
   ul {

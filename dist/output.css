@@ -459,8 +459,9 @@ p {
   line-height: 1.5rem;
 }
 
-.container {
-  max-width: 1150px;
+.fixed-container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 ul {
@@ -1197,8 +1198,16 @@ ol li {
   width: 100%;
 }
 
+.w-\[640px\] {
+  width: 640px;
+}
+
 .w-5\/6 {
   width: 83.333333%;
+}
+
+.w-\[530px\] {
+  width: 530px;
 }
 
 .w-fit {
@@ -2384,6 +2393,10 @@ ol li {
           box-decoration-break: clone;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -2507,11 +2520,6 @@ ol li {
   padding-right: 9rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2531,8 +2539,12 @@ ol li {
   padding-right: 0.5rem;
 }
 
-.pl-24 {
-  padding-left: 6rem;
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
 }
 
 .pt-7 {
@@ -3207,6 +3219,11 @@ body {
   top: 0;
   -webkit-transform: translateZ(-10px) scale(2);
           transform: translateZ(-10px) scale(2);
+  width: 100%;
+}
+
+.background img {
+  width: 100% !important;
 }
 
 .hover\:font-bold:hover {
@@ -3283,13 +3300,16 @@ body {
     }
   }
 
-  .sm\:container {
-    max-width: 1150px;
-  }
-
   .sm\:underline {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
