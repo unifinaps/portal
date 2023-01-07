@@ -148,4 +148,31 @@ body {
     height: 60px;
     background: url('../images/quotes.png') center no-repeat;
   }
+
+  .results-nav a {
+    @apply text-xl font-semibold rounded-lg px-4 py-2 text-gold;
+  }
+
+  .results-nav a.active {
+    @apply text-xl font-semibold border-gold border-solid border-2 rounded-lg px-4 py-2 text-white;
+  }
+
+  .results {
+    display: none;
+  }
+
+  .results.active {
+    display: block;
+  }
+
+  #results-container {
+    @apply bg-waves-dark;
+    /* transition: all; */
+    /* transition-duration: 500ms; */
+    background-size: cover;
+  }
+
+  #results-container.results-partners {
+    @apply bg-partners-results;
+  }
 }

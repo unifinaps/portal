@@ -771,6 +771,55 @@ ol li {
   background: url('../images/quotes.png') center no-repeat;
 }
 
+.results-nav a {
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(212 178 135 / var(--tw-text-opacity));
+}
+
+.results-nav a.active {
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(212 178 135 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.results {
+  display: none;
+}
+
+.results.active {
+  display: block;
+}
+
+#results-container {
+  background-image: url('../images/results-waves.png');
+  /* transition: all; */
+  /* transition-duration: 500ms; */
+  background-size: cover;
+}
+
+#results-container.results-partners {
+  background-image: url('../images/partners-results.jpg');
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -846,6 +895,10 @@ ol li {
   bottom: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .left-\[240px\] {
   left: 240px;
 }
@@ -864,10 +917,6 @@ ol li {
 
 .-bottom-\[25px\] {
   bottom: -25px;
-}
-
-.top-1 {
-  top: 0.25rem;
 }
 
 .isolate {
@@ -953,6 +1002,10 @@ ol li {
   margin-left: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -989,24 +1042,16 @@ ol li {
   margin-top: 2.25rem;
 }
 
+.ml-11 {
+  margin-left: 2.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .box-border {
@@ -1455,6 +1500,12 @@ ol li {
           columns: 2;
 }
 
+.columns-3 {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+}
+
 .break-before-auto {
   -webkit-column-break-before: auto;
      page-break-before: auto;
@@ -1827,6 +1878,10 @@ ol li {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-y-40 {
@@ -2269,12 +2324,12 @@ ol li {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-waves {
-  background-image: url('../images/guilloche-background.png');
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
-.bg-waves-dark {
-  background-image: url('../images/results-waves.png');
+.bg-waves {
+  background-image: url('../images/guilloche-background.png');
 }
 
 .decoration-slice {

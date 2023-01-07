@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="-apper">
     <div class="relative parallax h-[900px]">
       <div class="h-[900px] bg-black background">
         <img src="./images/main-banner.jpg">
@@ -80,7 +80,8 @@
               <img src="./images/youtube-large.png" alt="" class="absolute left-[240px] -top-10">
             </div>
             <div class="ml-4 text-xs max-w-[210px]">
-              <a href="#" class="block mb-6"><img class="inline-block mr-2 align-middle" src="./images/youtube-small.png">Target extract 3:46</a>
+              <a href="#" class="block mb-6"><img class="inline-block mr-2 align-middle"
+                  src="./images/youtube-small.png">Target extract 3:46</a>
 
               Reporter and environmentalist<br><b>Yan Arthus-Bertand</b><br>and produced by<br><b>Luc Besson</b>
             </div>
@@ -358,45 +359,98 @@
         <p class="text-base mt-9">Unifin Portal team</p>
       </div>
     </div>
-    <div class="text-white bg-bottom bg-no-repeat bg-contain bg-main-blue bg-waves-dark">
+    <div id="results-container" class="text-white bg-bottom bg-no-repeat bg-contain bg-main-blue">
       <div class="container px-24 py-16 text-white">
-        <div class="mb-12">
+        <div class="flex flex-row items-center mb-12">
           <div class="text-4xl font-medium">Expected Results</div>
-        </div>
-        <div class="flex flex-row gap-14">
-          <div class="flex-[1] font-medium text-white highlighted">
-            <p class="mb-4 text-base font-medium">Civilization is a stage in the development of society. Before
-              revealing the theme of the Project, we focus on our vision of the social principles of international unity
-              at the current stage of development of society, as they will be the unifying factors in the process of
-              implementing the Project.</p>
-            <p class="mb-8 text-base font-medium ">We want to change this world for the better: to preserve and
-              accelerate the economic, physical and moral evolutionary process of uman development and therefore we
-              start ith ourselves in the hope that our initiative will acquire constructive meaning, and the goals of
-              the Project will be accepted by the world community.</p>
+          <div class="flex flex-row gap-3 results-nav ml-11">
+            <a class="active" href="#results-world">World</a>
+            <a href="#results-economic">Economic</a>
+            <a href="#results-partners">Partners</a>
           </div>
-          <div class="flex-[2] columns-2 gap-14">
-            <ol class="list-decimal-special">
-              <li>Worldwide recognition of the factors influencing the viability of our planet as the property of all
-                mankind. They are subject to consolidated accounting, are possible to maintain and improve their quality
-                and are the main criteria for expressing the value of international settlement units (cash). And this is
-                a direct path to the transition to a resource-oriented world economy.</li>
-              <li>Restoring the environment by repurposing human values and ensuring adequate funding for restoration
-                processes.</li>
-              <li>Reconstruction of cities, transportation systems, agricultural and industrial enterprises into
-                energy-efficient, environmentally friendly systems that can meet the needs of all people.</li>
-              <li>Interchange of technologies and their use for the benefit of all peoples by streamlining the turnover
-                of scientific and technical potential.</li>
-              <li>Encouragement of creativity and creativity in a person in all its manifestations through the proposed
-                methodology.</li>
-              <li>Getting rid of remnants and prejudices by increasing the level of education of the Earth's population
-                by creating a correlation model (without replacement) of linear and non-linear education, as well as
-                rehabilitation and restoration of the cultural heritage of our civilization.</li>
-              <li>Development of methodologies through scientific research, not random opinions, by creating a favorable
-                environment and modern equipment with high-tech solutions for such developments.</li>
-              <li>Providing people not only with everything necessary for life, but also educating individuality with
-                the help of tasks that stimulate the human mind.</li>
-              <li>Intellectual and emotional preparation of people for the upcoming changes.</li>
-            </ol>
+        </div>
+        <div class="results active" id="results-world">
+          <div class="flex flex-row gap-14">
+            <div class="flex-[1] font-medium text-white highlighted">
+              <p class="mb-4 text-base font-medium">Civilization is a stage in the development of society. Before
+                revealing the theme of the Project, we focus on our vision of the social principles of international
+                unity
+                at the current stage of development of society, as they will be the unifying factors in the process of
+                implementing the Project.</p>
+              <p class="mb-8 text-base font-medium ">We want to change this world for the better: to preserve and
+                accelerate the economic, physical and moral evolutionary process of uman development and therefore we
+                start ith ourselves in the hope that our initiative will acquire constructive meaning, and the goals of
+                the Project will be accepted by the world community.</p>
+            </div>
+            <div class="flex-[2] columns-2 gap-14">
+              <ol class="list-decimal-special">
+                <li>Worldwide recognition of the factors influencing the viability of our planet as the property of all
+                  mankind. They are subject to consolidated accounting, are possible to maintain and improve their
+                  quality
+                  and are the main criteria for expressing the value of international settlement units (cash). And this
+                  is
+                  a direct path to the transition to a resource-oriented world economy.</li>
+                <li>Restoring the environment by repurposing human values and ensuring adequate funding for restoration
+                  processes.</li>
+                <li>Reconstruction of cities, transportation systems, agricultural and industrial enterprises into
+                  energy-efficient, environmentally friendly systems that can meet the needs of all people.</li>
+                <li>Interchange of technologies and their use for the benefit of all peoples by streamlining the
+                  turnover
+                  of scientific and technical potential.</li>
+                <li>Encouragement of creativity and creativity in a person in all its manifestations through the
+                  proposed
+                  methodology.</li>
+                <li>Getting rid of remnants and prejudices by increasing the level of education of the Earth's
+                  population
+                  by creating a correlation model (without replacement) of linear and non-linear education, as well as
+                  rehabilitation and restoration of the cultural heritage of our civilization.</li>
+                <li>Development of methodologies through scientific research, not random opinions, by creating a
+                  favorable
+                  environment and modern equipment with high-tech solutions for such developments.</li>
+                <li>Providing people not only with everything necessary for life, but also educating individuality with
+                  the help of tasks that stimulate the human mind.</li>
+                <li>Intellectual and emotional preparation of people for the upcoming changes.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="results" id="results-economic">
+          <ol class="list-decimal-special columns-3">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero officiis modi ullam id pariatur? Eligendi odio consectetur dolor accusamus dicta quod officia, exercitationem temporibus rerum quaerat ipsum modi soluta!</li>
+          </ol>
+        </div>
+        <div class="results" id="results-partners">
+          <div class="grid grid-cols-3 gap-6">
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
+            <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
+              <img src="./images/tender-platform-ico.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam repudiandae? Incidunt, quasi distinctio temporibus asperiores praesentium non vel necessitatibus aliquid quo, corrupti, quaerat cumque. Laboriosam, possimus blanditiis. Deserunt, quo.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -424,6 +478,24 @@
       setTimeRemaining()
     }, 1000);
     setTimeRemaining()
+
+    document.querySelectorAll('.results-nav a').forEach(function (resultsLink) {
+      resultsLink.addEventListener('click', function (e) {
+        e.preventDefault()
+        const container = document.getElementById('results-container')
+        const target = document.querySelector(resultsLink.getAttribute('href'))
+        document.querySelectorAll('.results-nav a').forEach(function (el) {
+          el.classList.remove('active')
+          container.classList.remove(el.getAttribute('href').replace('#', ''))
+        })
+        document.querySelectorAll('.results').forEach(function (el) {
+          el.classList.remove('active')
+        })
+        resultsLink.classList.add('active')
+        target.classList.add('active')
+        container.classList.add(resultsLink.getAttribute('href').replace('#', ''))
+      })
+    })
   </script>
 </body>
 

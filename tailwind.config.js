@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         'waves': "url('../images/guilloche-background.png')",
         'waves-dark': "url('../images/results-waves.png')",
+        'partners-results': "url('../images/partners-results.jpg')",
       }
     },
     colors: {
