@@ -75,6 +75,22 @@ body {
     top: 2px;
     left: 0;
   }
+
+  .list-decimal-special-progress li {
+    counter-increment: li;
+    position: relative;
+    padding-left: 1.5em;
+  }
+
+  .list-decimal-special-progress li:before {
+    content: counter(li) '.';
+    @apply text-main-blue;
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    top: 2px;
+    left: 0;
+  }
 }
 
 @layer components {
