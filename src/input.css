@@ -84,7 +84,6 @@ body {
 
   .list-decimal-special-progress li:before {
     content: counter(li) '.';
-    @apply text-main-blue;
     position: absolute;
     font-weight: 600;
     font-size: 14px;
@@ -119,12 +118,25 @@ body {
   }
 
   .progress .step-n {
-    @apply flex items-center justify-center w-full h-full rounded-full bg-main-blue;
+    @apply flex items-center justify-center w-full h-full rounded-full border-solid border-main-blue border-4 bg-white;
+  }
+
+  .progress .active .step-n {
+    @apply bg-main-blue;
   }
 
   .progress .date {
     position: absolute;
-    @apply text-sm font-medium text-main-blue;
+    @apply text-sm font-medium;
+  }
+
+  .progress .step-n, .progress .date, #progress-container li {
+    transition: all;
+    transition-duration: 500ms;
+  }
+
+  .progress .active .date, li.active {
+    @apply text-main-blue;
   }
 
   .progress > div:nth-child(odd) .date {
