@@ -3223,6 +3223,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   top: 0;
+  left: -10px;
   -webkit-transform: translateZ(-10px) scale(2);
           transform: translateZ(-10px) scale(2);
   width: 100%;
