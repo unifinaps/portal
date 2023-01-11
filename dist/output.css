@@ -1002,8 +1002,8 @@ ol li {
   margin-bottom: 0.5rem;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mb-20 {
@@ -1012,10 +1012,6 @@ ol li {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mr-2 {
@@ -1076,10 +1072,6 @@ ol li {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .box-border {
@@ -1939,6 +1931,10 @@ ol li {
   gap: 1.5rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-y-28 {
   row-gap: 7rem;
 }
@@ -2577,6 +2573,10 @@ ol li {
   padding-left: 2.25rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2648,11 +2648,6 @@ ol li {
   line-height: 1;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -2685,6 +2680,11 @@ ol li {
 
 .text-\[170px\] {
   font-size: 170px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -2808,6 +2808,11 @@ ol li {
   color: rgb(0 60 85 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -2815,6 +2820,16 @@ ol li {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline {
