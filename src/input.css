@@ -23,8 +23,8 @@ body {
   position: absolute;
   object-fit: cover;
   top: 0;
-  left: -10px;
-  transform: translateZ(-10px) scale(2);
+  left: 0px;
+  transform: translateZ(-9px) scale(2);
   width: 100%;
 }
 
