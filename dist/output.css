@@ -2569,6 +2569,14 @@ ol li {
   padding-left: 2.25rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3236,6 +3244,11 @@ body {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-gold:hover {
+  --tw-text-opacity: 1;
+  color: rgb(212 178 135 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
