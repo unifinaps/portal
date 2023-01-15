@@ -3275,11 +3275,14 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-perspective: 10px;
-          perspective: 10px;
+}
+
+.wrapper.desktop {
+  height: 100vh;
+  -webkit-perspective: 25px;
+          perspective: 25px;
 }
 
 .parallax {
@@ -3294,8 +3297,8 @@ body {
      object-fit: cover;
   top: 0;
   left: 0px;
-  -webkit-transform: translateZ(-9px) scale(2);
-          transform: translateZ(-9px) scale(2);
+  -webkit-transform: translateZ(-24px) scale(2);
+          transform: translateZ(-24px) scale(2);
   width: 100%;
 }
 

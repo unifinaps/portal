@@ -8,10 +8,13 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 10px;
+}
+
+.wrapper.desktop {
+  height: 100vh;
+  perspective: 25px;
 }
 
 .parallax {
@@ -24,7 +27,7 @@ body {
   object-fit: cover;
   top: 0;
   left: 0px;
-  transform: translateZ(-9px) scale(2);
+  transform: translateZ(-24px) scale(2);
   width: 100%;
 }
 
@@ -125,7 +128,7 @@ body {
   }
 
   .progress .step-n {
-    @apply flex items-center justify-center w-full h-full rounded-full border-solid border-main-blue border-4 bg-white;
+    @apply flex items-center justify-center w-full h-full bg-white border-4 border-solid rounded-full border-main-blue;
   }
 
   .progress .active .step-n {
@@ -169,11 +172,11 @@ body {
   }
 
   .results-nav a {
-    @apply text-xl font-semibold rounded-lg px-4 py-2 text-gold;
+    @apply px-4 py-2 text-xl font-semibold rounded-lg text-gold;
   }
 
   .results-nav a.active {
-    @apply text-xl font-semibold border-gold border-solid border-2 rounded-lg px-4 py-2 text-white;
+    @apply px-4 py-2 text-xl font-semibold text-white border-2 border-solid rounded-lg border-gold;
   }
 
   .results {
