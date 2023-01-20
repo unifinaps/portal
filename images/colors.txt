@@ -1,0 +1,9 @@
+main gold: #d4b287
+dark gold: #af916c
+light gold: #ece0c8
+light grey: f1f0ef
+main blue: #003c55
+black
+white
+
+top banner main gold transparency: 50%
