@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wrapper.desktop {
+  height: 100vh;
+  perspective: 25px;
+}
+
+.parallax {
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0px;
+  transform: translateZ(-24px) scale(2);
+  width: 100%;
+}
+
+.background img {
+  width: 100% !important;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-medium mb-7;
+  }
+
+  h1::after, .highlighted::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: theme('colors.gold-dark');
+    margin-top: 10px;
+  }
+
+  p {
+    @apply mb-2 text-lg leading-6;
+  }
+
+  .fixed-container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  ul {
+    @apply text-lg list-disc list-outside marker:text-gold-dark;
+  }
+
+  ul li {
+    @apply pl-3;
+  }
+
+  ol li {
+    @apply mb-2;
+  }
+
+  .list-decimal-special li {
+    counter-increment: li;
+    position: relative;
+    padding-left: 2em;
+  }
+
+  .list-decimal-special li:before {
+    content: counter(li) '.';
+    @apply text-gold;
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    top: 2px;
+    left: 0;
+  }
+
+  .list-decimal-special-progress li {
+    counter-increment: li;
+    position: relative;
+    padding-left: 1.5em;
+  }
+
+  .list-decimal-special-progress li:before {
+    content: counter(li) '.';
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    top: 2px;
+    left: 0;
+  }
+}
+
+@layer components {
+  .progress {
+    position: relative;
+    z-index: 2;
+  }
+
+  .progress::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 2px;
+    @apply bg-main-blue;
+    z-index: 1;
+    top: 50px
+  }
+
+  .progress > div {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 80px;
+    z-index: 2;
+  }
+
+  .progress .step-n {
+    @apply flex items-center justify-center w-full h-full bg-white border-4 border-solid rounded-full border-main-blue;
+  }
+
+  .progress .active .step-n {
+    @apply bg-main-blue;
+  }
+
+  .progress .date {
+    position: absolute;
+    @apply text-sm font-medium;
+  }
+
+  .progress .step-n, .progress .date, #progress-container li {
+    transition: all;
+    transition-duration: 500ms;
+  }
+
+  .progress .active .date, li.active {
+    @apply text-main-blue;
+  }
+
+  .progress > div:nth-child(odd) .date {
+    @apply -top-8;
+  }
+
+  .progress > div:nth-child(even) .date {
+    @apply -bottom-8;
+  }
+
+  .quote {
+    position: relative;
+  }
+  .quote::before {
+    position: absolute;
+    top: -22px;
+    left: -110px;
+    content: '';
+    display: block;
+    width: 85px;
+    height: 60px;
+    background: url('../images/quotes.png') center no-repeat;
+  }
+
+  .results-nav a {
+    @apply px-4 py-2 text-xl font-semibold rounded-lg text-gold;
+  }
+
+  .results-nav a.active {
+    @apply px-4 py-2 text-xl font-semibold text-white border-2 border-solid rounded-lg border-gold;
+  }
+
+  .results {
+    opacity: 0;
+    transition: all;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .results.active {
+    opacity: 1;
+  }
+
+  #results-container {
+    @apply bg-partners-results;
+    /* transition: all; */
+    /* transition-duration: 500ms; */
+    background-size: cover;
+  }
+
+  #results-container.results-partners {
+    @apply bg-partners-results;
+  }
+}
