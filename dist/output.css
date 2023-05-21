@@ -2405,12 +2405,20 @@ ol li {
   padding-right: 0.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
 
 .pl-16 {
   padding-left: 4rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pt-7 {
@@ -2443,14 +2451,6 @@ ol li {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-left {
