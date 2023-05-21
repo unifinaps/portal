@@ -932,6 +932,14 @@ ol li {
   margin-top: 0.75rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1062,6 +1070,10 @@ ol li {
 }
 
 .basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-6\/12 {
   flex-basis: 50%;
 }
 
@@ -1291,11 +1303,6 @@ ol li {
   padding-bottom: 6rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1305,12 +1312,20 @@ ol li {
   padding-right: 0.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
 
 .pl-16 {
   padding-left: 4rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pt-7 {
@@ -1343,14 +1358,6 @@ ol li {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-center {
