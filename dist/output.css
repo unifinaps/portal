@@ -851,8 +851,8 @@ ol li {
   top: -2.5rem;
 }
 
-.top-\[25vh\] {
-  top: 25vh;
+.top-\[40vh\] {
+  top: 40vh;
 }
 
 .-bottom-\[25px\] {
@@ -889,22 +889,6 @@ ol li {
 
 .-right-\[35\%\] {
   right: -35%;
-}
-
-.top-\[12vh\] {
-  top: 12vh;
-}
-
-.top-\[16vh\] {
-  top: 16vh;
-}
-
-.top-\[50vh\] {
-  top: 50vh;
-}
-
-.top-\[40vh\] {
-  top: 40vh;
 }
 
 .isolate {
@@ -1014,6 +998,10 @@ ol li {
   margin-left: 1.25rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
@@ -1060,14 +1048,6 @@ ol li {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mb-\[0px\] {
-  margin-bottom: 0px;
 }
 
 .box-border {
@@ -2425,6 +2405,10 @@ ol li {
      object-fit: scale-down;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -2443,14 +2427,6 @@ ol li {
 
 .p-16 {
   padding: 4rem;
-}
-
-.p-9 {
-  padding: 2.25rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .py-14 {
@@ -2645,9 +2621,9 @@ ol li {
   line-height: 1;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -2660,13 +2636,13 @@ ol li {
   line-height: 1.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-\[170px\] {
   font-size: 170px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -3425,6 +3401,10 @@ body {
     position: absolute;
   }
 
+  .xl\:top-\[25vh\] {
+    top: 25vh;
+  }
+
   .xl\:top-\[10\%\] {
     top: 10%;
   }
@@ -3441,8 +3421,8 @@ body {
     left: -110px;
   }
 
-  .xl\:top-\[25vh\] {
-    top: 25vh;
+  .xl\:mb-7 {
+    margin-bottom: 1.75rem;
   }
 
   .xl\:ml-12 {
@@ -3451,10 +3431,6 @@ body {
 
   .xl\:ml-11 {
     margin-left: 2.75rem;
-  }
-
-  .xl\:mb-7 {
-    margin-bottom: 1.75rem;
   }
 
   .xl\:block {
@@ -3529,10 +3505,6 @@ body {
 
   .xl\:pr-4 {
     padding-right: 1rem;
-  }
-
-  .xl\:text-left {
-    text-align: left;
   }
 
   .xl\:text-4xl {
