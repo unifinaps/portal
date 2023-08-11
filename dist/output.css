@@ -891,6 +891,10 @@ ol li {
   right: -35%;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -3402,6 +3406,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-8 {
+    top: 2rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
