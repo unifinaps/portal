@@ -22,6 +22,15 @@ body {
   z-index: -1;
 }
 
+@media (min-width: 1280px) {
+  .bannerContainer {
+    padding: 80px !important;
+  }
+  .bannerH1 {
+    margin-bottom: 28px !important;
+  }
+}
+
 .background {
   position: absolute;
   object-fit: cover;
