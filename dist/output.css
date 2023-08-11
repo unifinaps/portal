@@ -1068,10 +1068,6 @@ ol li {
   margin-top: 1.75rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-9 {
   margin-top: 2.25rem;
 }
@@ -2597,6 +2593,10 @@ ol li {
   padding-bottom: 1.5rem;
 }
 
+.pb-\[100\%\] {
+  padding-bottom: 100%;
+}
+
 .pl-16 {
   padding-left: 4rem;
 }
@@ -3406,10 +3406,6 @@ body {
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:block {
