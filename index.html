@@ -14,14 +14,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link href="./dist/output.css?359183d8-c702-44da-9b62-fb2a6a5a90ae" rel="stylesheet">
+  <link href="./dist/output.css?d46d9d2e-3578-40d0-ab3e-41f1ff0eb376" rel="stylesheet">
   <link rel="icon" href="./images/favicon-32.png" sizes="any"><!-- 32×32 -->
 </head>
 
 <body>
   <div class="wrapper">
     <div
-      class="flex flex-col justify-between md:block relative parallax h-[100svh] md:h-[900px] md:bg-none bg-no-repeat md:bg-auto bg-cover bg-center bg-main-banner md:bg-transparent bg-black/30 bg-blend-darken md:bg-blend-normal">
+      class="flex flex-col justify-between md:block relative parallax min-h-[100svh] md:h-[900px] md:bg-none bg-no-repeat md:bg-auto bg-cover bg-center bg-main-banner md:bg-transparent bg-black/30 bg-blend-darken md:bg-blend-normal">
       <div class="h-[900px] bg-black background hidden md:block">
         <img src="./images/main-banner.jpg">
       </div>
@@ -60,8 +60,7 @@
 
       </div>
       <div
-        class="relative bottom-0 flex items-start justify-center w-full font-bold leading-5 text-left md:absolute md:items-center md:text-center px-9 md:py-0 md:leading-10 bg-opacity-70 bg-gold-dark"
-        style="padding-top: 8px; padding-bottom: 8px;">
+        class="relative bottom-0 flex items-start justify-center w-full py-2 font-bold leading-5 text-left md:absolute md:items-center md:text-center px-9 md:py-0 md:leading-10 bg-opacity-70 bg-gold-dark">
         <img src="./images/caution-sign-48.png" alt="" class="inline-block h-[22px] mr-2 relative">
         Warning. Launch of the new World economy would lead to collapse of digital currencies
       </div>
@@ -569,25 +568,28 @@
     </div>
   </div>
   <div class="fixed top-0 left-0 z-50 justify-center hidden w-full h-full bg-white bg-opacity-50" id="popover">
-    <div class="w-[1170px] bg-white shadow-xl shadow-gray-500 p-16 flex flex-row fix self-center gap-16 relative">
+    <div
+      class="w-full max-h-screen xl:w-[1170px] bg-white shadow-xl shadow-gray-500 p-16 flex flex-col lg:flex-row fix self-center gap-16 relative overflow-y-auto">
       <div class="absolute top-8 right-[40px]">
         <a href="#" onclick="document.getElementById('popover').style.display = 'none';  return false;" id="close"
           class="text-6xl text-gold-dark"><img src="./images/close-ico.png"></a>
       </div>
-      <div class="flex-none text-center">
-        <img src="./images/lavla.png" alt="" class="mb-6">
-        <div class="mb-3"><b>Volodymyr LAIEVSKII</b></div>
+      <div class="flex flex-col items-center flex-none gap-6 text-center">
+        <img src="./images/lavla.png" alt="" class="flex-grow-0 flex-shrink block">
         <div>
-          <a href="mailto:" class="text-gold-dark hover:text-gold">ceo@unifin.finance</a><br>
-          <a href="tel:" class="">+45 36 95 77 77</a>
-        </div>
-        <div class="flex flex-row justify-center gap-5 mt-6">
-          <a class="block" href="https://www.linkedin.com/in/volodymyr-laievskii-4ba273109/" target="_blank"><img
-              src="./images/linkedin-ico.png" alt="LinkedIn"></a>
-          <a class="block" href="https://twitter.com/laievskii" target="_blank"><img src="./images/twitter-ico.png"
-              alt="Twitter"></a>
-          <a class="block" href="https://www.youtube.com/@unifinportal" target="_blank"><img
-              src="./images/youtube-ico.png" alt="YouTube"></a>
+          <div class="mb-3"><b>Volodymyr LAIEVSKII</b></div>
+          <div>
+            <a href="mailto:" class="text-gold-dark hover:text-gold">ceo@unifin.finance</a><br>
+            <a href="tel:" class="">+45 36 95 77 77</a>
+          </div>
+          <div class="flex flex-row gap-5 mt-6 lg:justify-center">
+            <a class="block" href="https://www.linkedin.com/in/volodymyr-laievskii-4ba273109/" target="_blank"><img
+                src="./images/linkedin-ico.png" alt="LinkedIn"></a>
+            <a class="block" href="https://twitter.com/laievskii" target="_blank"><img src="./images/twitter-ico.png"
+                alt="Twitter"></a>
+            <a class="block" href="https://www.youtube.com/@unifinportal" target="_blank"><img
+                src="./images/youtube-ico.png" alt="YouTube"></a>
+          </div>
         </div>
       </div>
       <div class="pt-3">
