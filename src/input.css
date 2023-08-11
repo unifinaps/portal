@@ -31,6 +31,14 @@ body {
   }
 }
 
+.bannerContainer {
+  padding: 20px;
+}
+
+.bannerH1 {
+  margin-bottom: 0px;
+}
+
 .background {
   position: absolute;
   object-fit: cover;
