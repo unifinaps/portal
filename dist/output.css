@@ -1178,6 +1178,10 @@ ol li {
   height: 100vmin;
 }
 
+.h-\[100svh\] {
+  height: 100svh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
