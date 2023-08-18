@@ -624,45 +624,22 @@
     </div>
   </div>
   <script>
-    // const targetDate = Date.parse('2023-10-30T11:00:00.000Z')
-    // const daysEl = document.getElementById('days')
-    // const hoursEl = document.getElementById('hours')
-    // const minutesEl = document.getElementById('minutes')
-    // const secondsEl = document.getElementById('seconds')
-    // function setTimeRemaining() {
-    //   const diff = targetDate - Date.now()
-    //   daysEl.innerText = Math.floor(diff / 1000 / 60 / 60 / 24)
-    //   hoursEl.innerText = Math.floor(diff / 1000 / 60 / 60) % 24
-    //   minutesEl.innerText = String(Math.floor(diff / 1000 / 60) % 60).padStart(2, '0')
-    //   secondsEl.innerText = String(Math.floor(diff / 1000) % 60).padStart(2, '0')
-    // }
-    // setInterval(function () {
-    //   setTimeRemaining()
-    // }, 1000);
-    // setTimeRemaining()
-
-    const dubaiOffset = 4 * 60 * 60 * 1000;
-    const targetDate = Date.parse('2023-10-30T11:00:00.000Z');
-    const targetDubaiTime = targetDate - dubaiOffset;
-
-    const daysEl = document.getElementById('days');
-    const hoursEl = document.getElementById('hours');
-    const minutesEl = document.getElementById('minutes');
-    const secondsEl = document.getElementById('seconds');
-
+    const targetDate = Date.parse('2023-10-30T11:00:00.000Z')
+    const daysEl = document.getElementById('days')
+    const hoursEl = document.getElementById('hours')
+    const minutesEl = document.getElementById('minutes')
+    const secondsEl = document.getElementById('seconds')
     function setTimeRemaining() {
-      const diff = targetDubaiTime - (Date.now() + dubaiOffset);
-      daysEl.innerText = Math.floor(diff / 1000 / 60 / 60 / 24);
-      hoursEl.innerText = Math.floor(diff / 1000 / 60 / 60) % 24;
-      minutesEl.innerText = String(Math.floor(diff / 1000 / 60) % 60).padStart(2, '0');
-      secondsEl.innerText = String(Math.floor(diff / 1000) % 60).padStart(2, '0');
+      const diff = targetDate - Date.now()
+      daysEl.innerText = Math.floor(diff / 1000 / 60 / 60 / 24)
+      hoursEl.innerText = Math.floor(diff / 1000 / 60 / 60) % 24
+      minutesEl.innerText = String(Math.floor(diff / 1000 / 60) % 60).padStart(2, '0')
+      secondsEl.innerText = String(Math.floor(diff / 1000) % 60).padStart(2, '0')
     }
-
     setInterval(function () {
-      setTimeRemaining();
+      setTimeRemaining()
     }, 1000);
-
-    setTimeRemaining();
+    setTimeRemaining()
 
     document.querySelectorAll('.results-nav a').forEach(function (resultsLink) {
       resultsLink.addEventListener('click', function (e) {
