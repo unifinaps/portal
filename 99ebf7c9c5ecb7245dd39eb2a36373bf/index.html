@@ -1,64 +1,57 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1200" />
+  <!-- <meta name="viewport" content="width=1200" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
 
   <title>Unifin Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YW11X69SX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-7YW11X69SX');
-  </script>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link href="./dist/output.css" rel="stylesheet">
+  <link href="./dist/output.css?x46d9d2e-3578-40d0-ab3e-41f1ff0eb376" rel="stylesheet">
   <link rel="icon" href="./images/favicon-32.png" sizes="any"><!-- 32×32 -->
 </head>
 
-<body style="min-width: 1200px;">
+<body>
   <div class="wrapper">
-    <div class="relative parallax h-[900px]">
-      <div class="h-[900px] bg-black background">
+    <div
+      class="flex flex-col justify-between md:block relative parallax min-h-[100svh] md:h-[900px] md:bg-none bg-no-repeat md:bg-auto bg-cover bg-center bg-main-banner md:bg-transparent bg-black/30 bg-blend-darken md:bg-blend-normal">
+      <div class="h-[900px] bg-black background hidden md:block">
         <img src="./images/main-banner.jpg">
       </div>
-      <div class="relative foreground">
-        <div id="nav" class="flex flex-row justify-between text-right py-14 px-36">
+      <div class="relative">
+        <div id="nav" class="flex flex-row justify-between text-right py-14 px-7 md:px-36">
           <img src="./images/moto.png">
           <img src="./images/logotype-1x.png" srcset="./images/logotype-2x.png 2x">
         </div>
-        <div class="mx-auto mt-24 text-7xl font-medium text-center text-white max-w-[700px] mb-20">The
-          Socio-Economic Viability Project</div>
-        <div class="text-xl font-medium text-center text-white">Shutdown and reboot of the World economy will begin in
+        <div class="mx-auto mt-24 text-5xl lg:text-7xl font-medium text-center text-white max-w-[700px] mb-10 md:mb-20">
+          The <span class="whitespace-nowrap">Socio-Economic</span> Viability Project</div>
+        <div class="px-5 text-xl font-medium text-center text-white">Shutdown and reboot of the World economy will begin
+          in
         </div>
-        <div class="flex justify-center mt-6 gap-14">
+        <div class="flex justify-center mt-6 gap-14" style="padding-bottom: 28px;">
           <div class="flex items-center justify-center text-center">
-            <div id="days" class="relative font-bold opacity-50 text-8xl text-gold">
+            <div id="days" class="relative font-bold opacity-50 md:text-8xl text-7xl text-gold">
             </div>
             <div class="absolute w-full text-xl font-bold text-white">DAYS</div>
           </div>
           <div class="flex items-center justify-center text-center">
-            <div id="hours" class="relative font-bold opacity-50 text-8xl text-gold">
+            <div id="hours" class="relative font-bold opacity-50 md:text-8xl text-7xl text-gold">
             </div>
             <div class="absolute w-full text-xl font-bold text-white">HOURS</div>
           </div>
           <div class="flex items-center justify-center text-center">
-            <div id="minutes" class="relative font-bold opacity-50 text-8xl text-gold">
+            <div id="minutes" class="relative font-bold opacity-50 md:text-8xl text-7xl text-gold">
             </div>
             <div class="absolute w-full text-xl font-bold text-white">MINUTES</div>
           </div>
-          <div class="flex items-center justify-center text-center">
+          <div class="items-center justify-center hidden text-center md:flex">
             <div id="seconds" class="relative font-bold opacity-50 text-8xl text-gold">
             </div>
             <div class="absolute w-full text-xl font-bold text-white">SECONDS</div>
@@ -66,17 +59,18 @@
         </div>
 
       </div>
-      <div class="absolute bottom-0 w-full font-bold leading-10 text-center bg-opacity-70 bg-gold-dark">
-        <img src="./images/caution-sign-48.png" alt="" class="inline-block h-[22px] mr-2 align-baseline relative top-1">
+      <div
+        class="relative bottom-0 flex items-start justify-center w-full py-2 font-bold leading-5 text-left md:absolute md:items-center md:text-center px-9 md:py-0 md:leading-10 bg-opacity-70 bg-gold-dark">
+        <img src="./images/caution-sign-48.png" alt="" class="inline-block h-[22px] mr-2 relative">
         Warning. Launch of the new World economy would lead to collapse of digital currencies
       </div>
     </div>
     <div class="bg-white bg-center bg-no-repeat bg-cover bg-waves">
 
-      <section class="py-16">
-        <div class="fixed-container">
+      <section class="flex justify-center w-full py-16 px-9">
+        <div class="max-w-6xl">
           <h1>Global problems</h1>
-          <div class="flex items-start justify-between gap-24 fixed-container flex-ro">
+          <div class="flex flex-col items-start justify-between gap-24 xl:flex-row">
 
             <div class="flex-1">
               <p>The Socio-Economic Viability Project is an undeniable solution to the numerous global problems that our
@@ -89,11 +83,12 @@
             <div class="flex flex-row items-end flex-none">
               <div class="relative flex-none">
                 <a href="https://www.youtube.com/watch?v=QvgoplMg-tY" target="_blank"><img src="./images/home-movie.jpg"
-                    alt="" class="shadow-md shadow-gray-600">
-                  <img src="./images/youtube-large.png" alt="" class="absolute left-[240px] -top-10"></a>
+                    alt="" class="shadow-md shadow-gray-600 w-60 md:w-auto">
+                  <img src="./images/youtube-large.png" alt=""
+                    class="absolute left-[240px] -top-10 md:block hidden"></a>
               </div>
               <div class="ml-4 text-xs max-w-[210px]">
-                <a href="https://www.youtube.com/watch?v=PXz4QY9dDn0" target="_blank" class="block mb-6"><img
+                <a href="https://www.youtube.com/watch?v=PXz4QY9dDn0" target="_blank" class="block mb-4 md:mb-6"><img
                     class="inline-block mr-2 align-middle" src="./images/youtube-small.png">Short version [3:48]</a>
 
                 Reporter and environmentalist<br><b>Yan Arthus-Bertand</b><br>and produced by<br><b>Luc Besson</b>
@@ -104,9 +99,9 @@
       </section>
 
       <div class="border-solid border-y-2 border-y-gold-dark">
-        <div class="fixed-container">
-          <section class="max-w-3xl mx-auto my-20 text-3xl text-center">
-            <div id="nav" class="mb-12">
+        <div>
+          <section class="max-w-3xl mx-auto my-20 text-3xl md:text-center px-9">
+            <div id="nav" class="mb-12 text-center">
               <img src="./images/logo-1x.png" srcset="./images/logo-2x.png 2x" alt="" class="inline-block">
             </div>
             By combining proven technologies with pioneering economic strategies, we aim to establish a 'Single Value
@@ -114,29 +109,31 @@
           </section>
         </div>
       </div>
-      <div class="fixed-container">
-        <section class="py-24 text-3xl">
-          <div class="text-5xl font-semibold text-center mb-14">Problems and tasks</div>
-          <div class="flex flex-row gap-5">
-            <div class="pr-2 basis-6/12">
-              <h1>What is wrong?</h1>
-              <ul class="ml-5">
-                <li>The current economic system is decaying</li>
-                <li>Cash lacks real backing</li>
-                <li>There is no single equivalent to the value of currencies</li>
-                <li>Issues with liquidity and emission of funds</li>
-                <li>The social sphere depends on funding</li>
-              </ul>
-            </div>
-            <div class="pr-2 basis-6/12">
-              <h1>What can we do?</h1>
-              <ul class="ml-5">
-                <li>Protect our civilization from socioeconomic collapse</li>
-                <li>Create a fair single-value equivalent</li>
-                <li>Create the Perfect Currency</li>
-                <li>Provide liquidity and safety for the new currency</li>
-                <li>Make the social sphere attractive for investors</li>
-              </ul>
+      <div>
+        <section class="flex justify-center w-full py-24 text-3xl px-9">
+          <div class="max-w-5xl">
+            <div class="text-5xl font-semibold text-center mb-14">Problems and tasks</div>
+            <div class="flex flex-col gap-10 md:gap-5 xl:flex-row">
+              <div class="pr-2 basis-6/12">
+                <h1>What is wrong?</h1>
+                <ul class="ml-5">
+                  <li>The current economic system is decaying</li>
+                  <li>Cash lacks real backing</li>
+                  <li>There is no single equivalent to the value of currencies</li>
+                  <li>Issues with liquidity and emission of funds</li>
+                  <li>The social sphere depends on funding</li>
+                </ul>
+              </div>
+              <div class="pr-2 basis-6/12">
+                <h1>What can we do?</h1>
+                <ul class="ml-5">
+                  <li>Protect our civilization from socioeconomic collapse</li>
+                  <li>Create a fair single-value equivalent</li>
+                  <li>Create the Perfect Currency</li>
+                  <li>Provide liquidity and safety for the new currency</li>
+                  <li>Make the social sphere attractive for investors</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -144,265 +141,279 @@
       </div>
 
     </div>
-
-    <div class="relative parallax z-2">
-      <div class="bg-black background">
-        <img src="./images/waterfall-solution.jpg">
-      </div>
-      <div class="flex flex-row max-w-2xl mx-auto text-center text-white foreground h-[700px] items-center">
-        <div>
-          <div class="mb-10 text-5xl font-medium">The Solution</div>
-          <div class="text-3xl">The Civilization Viability Index will act as the Single Value Equivalent and form the
-            foundation for the new Viability Assurance Currency (VAC). A Reserve Fund will provide adequate resources to
-            tackle global social and environmental challenges.</div>
+    <div>
+      <div class="relative bg-center bg-no-repeat bg-cover parallax z-2 bg-waterfall md:bg-none">
+        <div class="hidden bg-black background md:block">
+          <img src="./images/waterfall-solution.jpg">
+        </div>
+        <div
+          class="flex flex-row max-w-2xl mx-auto md:text-center text-white foreground h-[700px] items-center px-9">
+          <div>
+            <div class="mb-10 text-5xl font-medium">The Solution</div>
+            <div class="text-3xl">The Civilization Viability Index will act as the Single Value Equivalent and form the
+              foundation for the new Viability Assurance Currency (VAC). A Reserve Fund will provide adequate resources to
+              tackle global social and environmental challenges.</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bg-white">
-      <div class="flex justify-center">
-        <div class="flex flex-row justify-end py-12 pl-4 bg-gray-100 basis-1/2 group pl-lg-0">
-          <div class="w-[640px] pr-16">
-            <h1>
-              How it works
-              <div class="max-w-md my-2 text-sm subheader ">
-                The <i>Viability Assurance Currency</i> is determined by four foundational factors essential to human
+      <div class="bg-white">
+        <div class="flex flex-col justify-center xl:flex-row">
+          <div
+            class="flex flex-row justify-center px-4 py-12 bg-gray-100 md:pr-0 md:pl-4 xl:justify-end basis-1/2 group pl-lg-0">
+            <div class="xl:w-[640px] w-[580px] p-0 xl:pr-16">
+              <h1>
+                How it works
+                <div class="max-w-md my-2 text-sm subheader ">
+                  The <i>Viability Assurance Currency</i> is determined by four foundational factors essential to human
                 life, and a constantly developing methodology that remains receptive to new influential factors.
+                </div>
+              </h1>
+              <div class="relative flex flex-row flex-wrap justify-center gap-4">
+                <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
+                  <img src="./images/index-water-resource.jpg" alt="">
+                  <div class="p-4 text-base font-bold">INDEX Water Resource</div>
+                </div>
+                <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
+                  <img src="./images/index-land-fertility.jpg" alt="">
+                  <div class="p-4 text-base font-bold">INDEX Land Fertility</div>
+                </div>
+                <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
+                  <img src="./images/index-forest-land.jpg" alt="">
+                  <div class="p-4 text-base font-bold">INDEX Forest Land</div>
+                </div>
+                <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
+                  <img src="./images/index-ocean-aptitude.jpg" alt="">
+                  <div class="p-4 text-base font-bold">INDEX Ocean Aptitude</div>
+                </div>
+                <div
+                  class="absolute z-10 grid items-center justify-center w-full h-full p-8 transition-all duration-500 scale-0 bg-white shadow-md opacity-0 shadow-gray-400 group-hover:opacity-100 group-hover:scale-100">
+                  <div>
+                    <div class="mb-4 text-lg font-bold leading-tight">Fundamental assets of the society of the future and
+                      a
+                      fundamentally new concept of global mutual settlements</div>
+                    <p class="text-sm">The viability of our civilization is the only value that cannot be exploited or
+                      manipulated. This is an indisputable truth that can be measured, sustained, and elevated to enhance
+                      its standards.</p>
+                    <p class="text-sm">The viability of civilisation depends on four main factors: access to clean and
+                      breathable air, the ability to sustain human life, fertile lands for crop cultivation, and the
+                      utilization of the world's oceans and lakes.</p>
+                    <p class="text-sm"><a href="#"
+                        onclick="document.getElementById('popover').style.display = 'grid'; return false;"
+                        class="underline text-gold-dark hover:text-gold">Founder of UNIFIN
+                        PORTAL
+                        GROUP</a></p>
+                  </div>
+                </div>
               </div>
-            </h1>
-            <div class="relative flex flex-row flex-wrap gap-4">
-              <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
-                <img src="./images/index-water-resource.jpg" alt="">
-                <div class="p-4 text-base font-bold">INDEX Water Resource</div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 py-12 xl:pl-16 xl:basis-1/2 xl:w-[530px] pr-lg-0 xl:pr-4 px-9">
+            <div class="flex justify-center xl:justify-start">
+              <div class="relative flex flex-col justify-center md:flex-row w-fit">
+                <img src="./images/viability-index.jpg" alt="">
+                <div
+                  class="shadow-md shadow-gray-400 xl:absolute xl:h-[80%] xl:top-[10%] bg-white xl:w-[70%] p-6 xl:-right-[35%] w-full">
+                  <div class="text-lg font-bold leading-loose">Viability INDEX</div>
+                  <div class="text-base leading-tight">The <i>Viability INDEX</i> is calculated based on weighted average
+                    values of the influence factors. It is immune to market influences. This is the basis of the Single
+                    Value Equivalent.
+                  </div>
+                </div>
               </div>
-              <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
-                <img src="./images/index-land-fertility.jpg" alt="">
-                <div class="p-4 text-base font-bold">INDEX Land Fertility</div>
-              </div>
-              <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
-                <img src="./images/index-forest-land.jpg" alt="">
-                <div class="p-4 text-base font-bold">INDEX Forest Land</div>
-              </div>
-              <div class="transition-all duration-500 bg-white shadow-md shadow-gray-400 group-hover:opacity-0">
-                <img src="./images/index-ocean-aptitude.jpg" alt="">
-                <div class="p-4 text-base font-bold">INDEX Ocean Aptitude</div>
-              </div>
-              <div
-                class="absolute z-10 grid items-center justify-center w-full h-full p-8 transition-all duration-500 scale-0 bg-white shadow-md opacity-0 shadow-gray-400 group-hover:opacity-100 group-hover:scale-100">
-                <div>
-                  <div class="mb-4 text-lg font-bold leading-tight">Fundamental assets of the society of the future and
-                    a
-                    fundamentally new concept of global mutual settlements</div>
-                  <p class="text-sm">The viability of our civilization is the only value that cannot be exploited or
-                    manipulated. This is an indisputable truth that can be measured, sustained, and elevated to enhance
-                    its standards.</p>
-                  <p class="text-sm">The viability of civilisation depends on four main factors: access to clean and
-                    breathable air, the ability to sustain human life, fertile lands for crop cultivation, and the
-                    utilization of the world's oceans and lakes.</p>
-                  <p class="text-sm"><a href="#"
-                      onclick="document.getElementById('popover').style.display = 'grid'; return false;"
-                      class="underline text-gold-dark hover:text-gold">Founder of UNIFIN
-                      PORTAL
-                      GROUP</a></p>
+            </div>
+            <div class="flex justify-center xl:justify-start">
+              <div class="relative flex flex-col justify-center w-fit md:flex-row">
+                <img src="./images/vac.jpg" alt="">
+                <div
+                  class="shadow-md shadow-gray-400 xl:absolute xl:h-[80%] xl:top-[10%] bg-white xl:w-[70%] p-6 xl:-right-[35%] w-full">
+                  <div class="text-lg font-bold leading-loose">VAC</div>
+                  <div class="text-base leading-tight">The <i>Viability Assurance Currency</i> is the world's first
+                    government-backed cryptocurrency, serving not just as a means of payment but as a 'VACcine' against
+                    global economic chaos.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-3 py-12 pl-16 basis-1/2 w-[530px] pr-lg-0 pr-4">
-          <div class="relative w-fit">
-            <img src="./images/viability-index.jpg" alt="">
-            <div class="shadow-md shadow-gray-400 absolute h-[80%] top-[10%] bg-white w-[70%] p-6 -right-[35%]">
-              <div class="text-lg font-bold leading-loose">Viability INDEX</div>
-              <div class="text-base leading-tight">The <i>Viability INDEX</i> is calculated based on weighted average
-                values of the influence factors. It is immune to market influences. This is the basis of the Single
-                Value Equivalent.
+      </div>
+
+      <div class="flex justify-center w-full bg-gold">
+        <div class="max-w-6xl py-16">
+          <div class="text-5xl font-semibold text-center">What will be done?</div>
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 mt-36 gap-y-40 md:gap-y-28">
+            <div class="relative">
+              <p class="relative z-10 text-base">The assets of the Factors of Influence on the Viability of Civilization
+                are registered in the Open Registries and Exchange Indices are created.</p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                1
+              </div>
+            </div>
+            <div class="relative">
+              <p class="relative z-10 text-base">A Vitality Index will be established that is immune to speculative
+                influences and will function as a Single Value Equivalent.</p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                2
+              </div>
+            </div>
+            <div class="relative">
+              <p class="relative z-10 text-base">A cryptocurrency payment system will be established and implemented, with
+                subsequent distribution among the owners of the Influence Factors' assets.</p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                3
+              </div>
+            </div>
+            <div class="relative">
+              <p class="relative z-10 text-base">A new algorithm for decentralized transaction accounting will be
+                launched. This will include monitoring compliance with the Regulation on the circulation of exchange
+                assets, as well as an AML analyzer.
+              </p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                4
+              </div>
+            </div>
+            <div class="relative">
+              <p class="relative z-10 text-base">An E-Commerce Portal called the Common Financial Space is set to be
+                established to streamline trading and investment activities across various platforms, featuring new
+                indices and a currency designed to ensure viability assurance.</p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                5
+              </div>
+            </div>
+            <div class="relative">
+              <p class="relative z-10 text-base">Establish a Reserve Fund and utilize it to enhance the Viability Index's
+                efficacy. New Factors of Influence will be developed and put into action.</p>
+              <div
+                class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
+                6
               </div>
             </div>
           </div>
-          <div class="relative w-fit">
-            <img src="./images/vac.jpg" alt="">
-            <div class="shadow-md shadow-gray-400 absolute h-[80%] top-[10%] bg-white w-[70%] p-6 -right-[35%]">
-              <div class="text-lg font-bold leading-loose">VAC</div>
-              <div class="text-base leading-tight">The <i>Viability Assurance Currency</i> is the world's first
-                government-backed cryptocurrency, serving not just as a means of payment but as a 'VACcine' against
-                global economic chaos.</div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
+      <div id="progress-container" class="flex justify-center w-full bg-white px-9">
+        <div class="flex flex-col max-w-6xl py-16 xl:flex-row text-gold">
+          <div class="flex-[0] shrink mr-32 text-main-blue">
+            <h1>Project Schedule Timeline</h1>
+          </div>
+          <div class="flex-[1]">
+            <div class="justify-around hidden text-2xl font-bold text-center xl:flex shrink-0 text-gold pt-7 progress">
+              <div>
+                <div class="step-n">1</div>
+                <div class="date">10/2023</div>
+              </div>
+              <div>
+                <div class="step-n">2</div>
+                <div class="date">01/2024</div>
+              </div>
+              <div>
+                <div class="step-n">3</div>
+                <div class="date">04/2024</div>
+              </div>
+              <div>
+                <div class="step-n">4</div>
+                <div class="date">05/2024</div>
+              </div>
+              <div>
+                <div class="step-n">5</div>
+                <div class="date">11/2024</div>
+              </div>
+              <div>
+                <div class="step-n">6</div>
+                <div class="date">01/2025</div>
+              </div>
+              <div>
+                <div class="step-n">7</div>
+                <div class="date">02/2025</div>
+              </div>
+              <div>
+                <div class="step-n">8</div>
+                <div class="date">03/2025</div>
+              </div>
+              <div>
+                <div class="step-n">9</div>
+                <div class="date">04/2025</div>
+              </div>
+            </div>
 
-    <div class=" bg-gold">
-      <div class="py-16 fixed-container">
-        <div class="text-5xl font-semibold text-center">What will be done?</div>
-        <div class="grid grid-cols-3 gap-5 mt-36 gap-y-28">
-          <div class="relative">
-            <p class="relative z-10 text-base">The assets of the Factors of Influence on the Viability of Civilization
-              are registered in the Open Registries and Exchange Indices are created.</p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              1
-            </div>
+            <ol class="w-full gap-10 m-0 font-medium xl:ml-12 columns-1 xl:columns-2 list-decimal-special-progress">
+              <li>Socio-Economic Viability Project press-conference</li>
+              <li>Launch of the INDEX Viability® Turnover Commission</li>
+              <li>Launch of UNIFIN E-COMMERCE PORTAL®</li>
+              <li>UNIFIN GLOBAL EXCHANGE® launch</li>
+              <li>UNIFIN CRYPTO EXCHANGE®, INDEX Water Resource®, INDEX Forest Land®, INDEX Land Fertility® launch</li>
+              <li>UNIFIN CROWDFUNDING PLATFORM® launch, INDEX Ocean Aptitude® launch</li>
+              <li>Reserve Fund launch, Issuance of Viability Asurance Currency®</li>
+              <li>UNIFIN SCIENCE AND TECHNOLOGY EXCHANGE® launch</li>
+              <li>UNIFIN WURT PLATFORM (Waste Utilization and Recycling Tender)®, UNIFIN TNECG PLATFORM (for the Turnover
+                of Non-Exchange Categories of Goods)® launch</li>
+            </ol>
           </div>
-          <div class="relative">
-            <p class="relative z-10 text-base">A Vitality Index will be established that is immune to speculative
-              influences and will function as a Single Value Equivalent.</p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              2
+        </div>
+      </div>
+      <div class="flex justify-center w-full bg-gold px-9">
+        <div class="max-w-6xl py-16 text-main-blue">
+          <div class="max-w-5xl text-4xl font-medium leading-snug ">Trading and Investment platforms:</div>
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 mt-7">
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/traditional-exchange-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>World-Class Brokerage Platform:</strong> A premier exchange platform using
+                white label terms that allows trading in Influence Factors and VAC.</div>
             </div>
-          </div>
-          <div class="relative">
-            <p class="relative z-10 text-base">A cryptocurrency payment system will be established and implemented, with
-              subsequent distribution among the owners of the Influence Factors' assets.</p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              3
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/cryptocurrency-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>Cryptocurrency Trading with VAC:</strong> A platform specialized in
+                cryptocurrency trading that utilizes VAC as the base currency. It features innovative digital solutions
+                for transactions that meet regulatory standards.</div>
             </div>
-          </div>
-          <div class="relative">
-            <p class="relative z-10 text-base">A new algorithm for decentralized transaction accounting will be
-              launched. This will include monitoring compliance with the Regulation on the circulation of exchange
-              assets, as well as an AML analyzer.
-            </p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              4
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/recycle-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>Eco-Platform for Waste Management and Recycling:</strong> A dedicated platform
+                aimed at strengthening the Influence Factors of the Viability Index and promoting environmental
+                sustainability.</div>
             </div>
-          </div>
-          <div class="relative">
-            <p class="relative z-10 text-base">An E-Commerce Portal called the Common Financial Space is set to be
-              established to streamline trading and investment activities across various platforms, featuring new
-              indices and a currency designed to ensure viability assurance.</p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              5
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/scientific-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>Sci-Tech Intellectual Property Exchange:</strong> A trading platform dedicated
+                to the circulation of intellectual property rights, complemented by a specialized social network.</div>
             </div>
-          </div>
-          <div class="relative">
-            <p class="relative z-10 text-base">Establish a Reserve Fund and utilize it to enhance the Viability Index's
-              efficacy. New Factors of Influence will be developed and put into action.</p>
-            <div
-              class="absolute opacity-90 z-0 text-gold-dark text-[170px] font-semibold text-center w-full -bottom-[25px]">
-              6
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/crowdfunding-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>Risk-Mitigated Crowdfunding:</strong> A Crowdfunding Tender platform designed
+                to minimize investment risks and accommodate participants from nearly all jurisdictions.</div>
+            </div>
+            <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
+              <img src="./images/tender-platform-ico.png" class="mb-4" alt="">
+              <div class="text-sm"><strong>Specialized Tender for Unique Goods:</strong> A platform focused on the supply
+                turnover of non-exchange goods, equipped with an advanced filter system and associated services.</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="progress-container" class="bg-white">
-      <div class="flex flex-row py-16 fixed-container text-gold">
-        <div class="flex-[0] shrink mr-32 text-main-blue">
-          <h1>Project Schedule Timeline</h1>
-        </div>
-        <div class="flex-[1]">
-          <div class="flex justify-around text-2xl font-bold text-center shrink-0 text-gold pt-7 progress">
-            <div>
-              <div class="step-n">1</div>
-              <div class="date">10/2023</div>
-            </div>
-            <div>
-              <div class="step-n">2</div>
-              <div class="date">01/2024</div>
-            </div>
-            <div>
-              <div class="step-n">3</div>
-              <div class="date">04/2024</div>
-            </div>
-            <div>
-              <div class="step-n">4</div>
-              <div class="date">05/2024</div>
-            </div>
-            <div>
-              <div class="step-n">5</div>
-              <div class="date">11/2024</div>
-            </div>
-            <div>
-              <div class="step-n">6</div>
-              <div class="date">01/2025</div>
-            </div>
-            <div>
-              <div class="step-n">7</div>
-              <div class="date">02/2025</div>
-            </div>
-            <div>
-              <div class="step-n">8</div>
-              <div class="date">03/2025</div>
-            </div>
-            <div>
-              <div class="step-n">9</div>
-              <div class="date">04/2025</div>
-            </div>
-          </div>
+      <div class="flex justify-center w-full px-9">
+        <div class="max-w-2xl pb-16 pt-36 xl:py-16 text-main-blue">
+          <div class="relative text-main-blue">
+            <img src="./images/quotes.png" alt="" class="absolute -top-[75px] xl:-top-[22px] left-0 xl:-left-[110px]">
+            <p class="text-2xl font-medium">The Commission for the Regulation of INDEX Viability® Turnover is
+              launching a new mechanism to increase the values of Influencing Factors. This includes funding for developing
+              and implementing new Factors of Influence on the Viability Index, as well as risk-free targeted funding. The
+              mechanism will also enable Return on Investments from the Reserve Fund in Projects.</p>
 
-          <ol class="gap-10 ml-12 font-medium columns-2 list-decimal-special-progress">
-            <li>Socio-Economic Viability Project press-conference</li>
-            <li>Launch of the INDEX Viability® Turnover Commission</li>
-            <li>Launch of UNIFIN E-COMMERCE PORTAL®</li>
-            <li>UNIFIN GLOBAL EXCHANGE® launch</li>
-            <li>UNIFIN CRYPTO EXCHANGE®, INDEX Water Resource®, INDEX Forest Land®, INDEX Land Fertility® launch</li>
-            <li>UNIFIN CROWDFUNDING PLATFORM® launch, INDEX Ocean Aptitude® launch</li>
-            <li>Reserve Fund launch, Issuance of Viability Asurance Currency®</li>
-            <li>UNIFIN SCIENCE AND TECHNOLOGY EXCHANGE® launch</li>
-            <li>UNIFIN WURT PLATFORM (Waste Utilization and Recycling Tender)®, UNIFIN TNECG PLATFORM (for the Turnover
-              of Non-Exchange Categories of Goods)® launch</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-    <div class="bg-gold">
-      <div class="py-16 fixed-container text-main-blue">
-        <div class="max-w-5xl text-4xl font-medium leading-snug ">Trading and Investment platforms:</div>
-        <div class="grid grid-cols-3 gap-5 mt-7">
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/traditional-exchange-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>World-Class Brokerage Platform:</strong> A premier exchange platform using
-              white label terms that allows trading in Influence Factors and VAC.</div>
-          </div>
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/cryptocurrency-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>Cryptocurrency Trading with VAC:</strong> A platform specialized in
-              cryptocurrency trading that utilizes VAC as the base currency. It features innovative digital solutions
-              for transactions that meet regulatory standards.</div>
-          </div>
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/recycle-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>Eco-Platform for Waste Management and Recycling:</strong> A dedicated platform
-              aimed at strengthening the Influence Factors of the Viability Index and promoting environmental
-              sustainability.</div>
-          </div>
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/scientific-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>Sci-Tech Intellectual Property Exchange:</strong> A trading platform dedicated
-              to the circulation of intellectual property rights, complemented by a specialized social network.</div>
-          </div>
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/crowdfunding-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>Risk-Mitigated Crowdfunding:</strong> A Crowdfunding Tender platform designed
-              to minimize investment risks and accommodate participants from nearly all jurisdictions.</div>
-          </div>
-          <div class="pb-6 pr-6 border-2 border-solid border-main-blue pt-9 pl-9">
-            <img src="./images/tender-platform-ico.png" class="mb-4" alt="">
-            <div class="text-sm"><strong>Specialized Tender for Unique Goods:</strong> A platform focused on the supply
-              turnover of non-exchange goods, equipped with an advanced filter system and associated services.</div>
+            <p class="text-base mt-9">Unifin Portal team</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-end py-16 fixed-container text-main-blue">
-      <div class="w-2/3 text-main-blue">
-        <p class="text-2xl font-medium quote">The Commission for the Regulation of INDEX Viability® Turnover is
-          launching a new mechanism to increase the values of Influencing Factors. This includes funding for developing
-          and implementing new Factors of Influence on the Viability Index, as well as risk-free targeted funding. The
-          mechanism will also enable Return on Investments from the Reserve Fund in Projects.</p>
-        <p class="text-base mt-9">Unifin Portal team</p>
-      </div>
-    </div>
-    <div id="results-container" class="text-white bg-bottom bg-no-repeat bg-contain bg-main-blue">
-      <div class="py-16 text-white lg:px-0 fixed-container">
-        <div class="flex flex-row items-center mb-12">
-          <div class="text-4xl font-medium">Expected Results</div>
-          <div class="flex flex-row gap-3 results-nav ml-11">
+    <div id="results-container"
+      class="flex justify-center w-full text-white bg-bottom bg-no-repeat bg-contain bg-main-blue px-9">
+      <div class="max-w-6xl py-16 text-white">
+        <div class="flex flex-col items-center mb-12 xl:flex-row">
+          <div class="mb-5 text-4xl font-medium xl:mb-0">Expected Results</div>
+          <div class="flex flex-row gap-3 m-0 results-nav xl:ml-11">
             <a href="#results-world">Socio</a>
             <a href="#results-economic">Economic</a>
             <a class="active" href="#results-partners">Partners</a>
@@ -410,12 +421,12 @@
         </div>
         <div class="grid grid-cols-1">
           <div class="results" id="results-world">
-            <div class="flex flex-row gap-14">
+            <div class="flex flex-col xl:flex-row gap-14">
               <div class="flex-[1] font-medium text-white highlighted">
                 <p class="mb-4 text-base font-medium">Civilization represents a specific phase in societal evolution. Before delving into the Project's details, our primary focus is on the principles that underpin global unity in this current phase. These principles will guide the Project's implementation.</p>
                 <p class="mb-8 text-base font-medium ">Our mission is straightforward: better the world. We aim to uphold and speed up human development in economic, physical, and moral dimensions. We initiate this with our own actions, hoping the global community will resonate with and adopt our Project's goals.</p>
               </div>
-              <div class="flex-[2] columns-2 gap-14">
+              <div class="flex-[2] columns-1 xl:columns-2 gap-14">
                 <ol class="list-decimal-special">
                   <li><strong>Global Recognition:</strong> Factors that influence our planet's viability should be seen as shared assets. These factors should be systematically accounted for, maintained, and improved. They will serve as benchmarks for valuing international monetary units, paving the way for a resource-centric global economy.</li>
                   <li><strong>Environmental Restoration:</strong> We aim to align human values towards environmental rejuvenation and ensure funds are allocated for restoration efforts.</li>
@@ -431,7 +442,7 @@
             </div>
           </div>
           <div class="results" id="results-economic">
-            <ol class="list-decimal-special columns-3">
+            <ol class="list-decimal-special columns-1 md:columns-3">
               <li><strong>Introduction of Exchange Indices:</strong> Four critical indices - INDEX Water Resource®, INDEX Land Fertility®, INDEX Forest Land®, and INDEX Ocean Aptitude® - will be established, reflecting our civilization's viability. These will be available for international trading.</li>
               <li><strong>A Stable Financial Instrument:</strong> The INDEX Viability® will be launched as a universally equitable financial instrument immune to speculative influences.</li>
               <li><strong>Regulatory Commission:</strong> A self-regulating body, the INDEX Viability® Regulatory Commission, will be set up. It holds the potential to prototype an International Regulatory Body for digital mutual settlements.</li>
@@ -443,7 +454,7 @@
             </ol>
           </div>
           <div class="results active" id="results-partners">
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
               <div class="flex flex-row items-center gap-6 p-6 font-medium bg-white bg-opacity-70 text-main-blue">
                 <img src="./images/partners-1.png" alt="">
                 <p>The Partners will lead the reform of the global monetary system.</p>
@@ -473,8 +484,8 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-between gap-16 pt-12 pb-16 text-sm fixed-container">
-      <div>
+    <div class="flex flex-col justify-between gap-16 pt-12 pb-16 text-sm md:flex-row px-9">
+      <div class="max-w-6xl">
         <p class="text-sm text-gray-500">© 2023 UNIFIN PORTAL®, UNIFINPORTAL® (both spelling and part of the site or
           e-mail name), UNIFIN GROUP®, SOCIO-ECONOMIC VIABILITY PROJECT®, UNIFIN PAYMENT®, UNIFIN COMMODITY®, UNIFIN
           EXCHANGE®, UNIFIN INNOVATION®, INDEX Water Resource®, INDEX Land Fertility®, INDEX Forest Land®, INDEX Ocean
@@ -488,29 +499,33 @@
             class="underline text-gold-dark hover:text-gold">founder of UNIFIN PORTAL GROUP</a>
         </p>
       </div>
-      <div class="flex-none"><img src="./images/logotype-1x-small.png" srcset="./images/logotype-2x-small.png 2x"></div>
+      <div class="flex justify-center flex-none w-full md:w-auto md:block"><img src="./images/logotype-1x-small.png"
+          srcset="./images/logotype-2x-small.png 2x"></div>
     </div>
   </div>
   <div class="fixed top-0 left-0 z-50 justify-center hidden w-full h-full bg-white bg-opacity-50" id="popover">
-    <div class="w-[1170px] bg-white shadow-xl shadow-gray-500 p-16 flex flex-row fix self-center gap-16 relative">
-      <div class="absolute top-8 right-[40px]">
+    <div
+      class="w-full max-h-screen xl:w-[1170px] bg-white shadow-xl shadow-gray-500 p-16 flex flex-col lg:flex-row fix self-center gap-16 relative overflow-y-auto">
+      <div class="absolute top-12 lg:top-8 right-[40px]">
         <a href="#" onclick="document.getElementById('popover').style.display = 'none';  return false;" id="close"
           class="text-6xl text-gold-dark"><img src="./images/close-ico.png"></a>
       </div>
-      <div class="flex-none text-center">
-        <img src="./images/lavla.png" alt="" class="mb-6">
-        <div class="mb-3"><b>Volodymyr LAIEVSKII</b></div>
+      <div class="flex flex-col items-center flex-none gap-6 text-center">
+        <img src="./images/lavla.png" alt="" class="flex-grow-0 flex-shrink block">
         <div>
-          <a href="mailto:" class="text-gold-dark hover:text-gold">ceo@unifin.finance</a><br>
-          <a href="tel:" class="">+45 36 95 77 77</a>
-        </div>
-        <div class="flex flex-row justify-center gap-5 mt-6">
-          <a class="block" href="https://www.linkedin.com/in/volodymyr-laievskii-4ba273109/" target="_blank"><img
-              src="./images/linkedin-ico.png" alt="LinkedIn"></a>
-          <a class="block" href="https://twitter.com/laievskii" target="_blank"><img src="./images/twitter-ico.png"
-              alt="Twitter"></a>
-          <a class="block" href="https://www.youtube.com/@unifinportal" target="_blank"><img
-              src="./images/youtube-ico.png" alt="YouTube"></a>
+          <div class="mb-3"><b>Volodymyr LAIEVSKII</b></div>
+          <div>
+            <a href="mailto:" class="text-gold-dark hover:text-gold">ceo@unifin.finance</a><br>
+            <a href="tel:" class="">+45 36 95 77 77</a>
+          </div>
+          <div class="flex flex-row gap-5 mt-6 lg:justify-center">
+            <a class="block" href="https://www.linkedin.com/in/volodymyr-laievskii-4ba273109/" target="_blank"><img
+                src="./images/linkedin-ico.png" alt="LinkedIn"></a>
+            <a class="block" href="https://twitter.com/laievskii" target="_blank"><img src="./images/twitter-ico.png"
+                alt="Twitter"></a>
+            <a class="block" href="https://www.youtube.com/@unifinportal" target="_blank"><img
+                src="./images/youtube-ico.png" alt="YouTube"></a>
+          </div>
         </div>
       </div>
       <div class="pt-3">
@@ -545,7 +560,7 @@
     </div>
   </div>
   <script>
-    const targetDate = Date.parse('2023-10-30T11:00:00.000Z')
+    const targetDate = Date.parse('2024-02-09T11:00:00.000Z')
     const daysEl = document.getElementById('days')
     const hoursEl = document.getElementById('hours')
     const minutesEl = document.getElementById('minutes')

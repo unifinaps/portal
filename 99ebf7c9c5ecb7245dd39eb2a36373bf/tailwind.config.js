@@ -12,6 +12,8 @@ module.exports = {
         'waves': "url('../images/guilloche-background.png')",
         'waves-dark': "url('../images/results-waves.png')",
         'partners-results': "url('../images/partners-results.jpg')",
+        'main-banner': "url('../images/main-banner.jpg')",
+        'waterfall': "url('../images/waterfall-solution.jpg')",
       }
     },
     colors: {
